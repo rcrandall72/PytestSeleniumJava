@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [LambdaSelenium by groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GRP-Smoke(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="LearningTestNG.TestSauceDemo">
+        <methods>
+          <include name="test_buy_item"/>
+          <include name="test_login_logout"/>
+        </methods>
+      </class> <!-- LearningTestNG.TestSauceDemo -->
+    </classes>
+  </test> <!-- GRP-Smoke(failed) -->
+</suite> <!-- Failed suite [LambdaSelenium by groups] -->

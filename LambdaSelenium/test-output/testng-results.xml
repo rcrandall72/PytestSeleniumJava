@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-14T01:00:28Z" name="LambdaSelenium by groups" finished-at="2023-05-14T01:00:34Z" duration-ms="5762">
+    <groups>
+      <group name="Regression">
+        <method signature="TestSauceDemo.test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_buy_item" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_login_logout" class="LearningTestNG.TestSauceDemo"/>
+      </group> <!-- Regression -->
+      <group name="Smoke">
+        <method signature="TestSauceDemo.test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_buy_item" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_login_logout" class="LearningTestNG.TestSauceDemo"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2023-05-14T01:00:28Z" name="GRP-Smoke" finished-at="2023-05-14T01:00:34Z" duration-ms="5762">
+      <class name="LearningTestNG.TestSauceDemo">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:28Z" name="beforeMethod" finished-at="2023-05-14T01:00:30Z" duration-ms="2190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:30Z" name="test_buy_item" finished-at="2023-05-14T01:00:32Z" duration-ms="1191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_buy_item -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:32Z" name="afterMethod" finished-at="2023-05-14T01:00:32Z" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:32Z" name="beforeMethod" finished-at="2023-05-14T01:00:33Z" duration-ms="1076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:33Z" name="test_login_logout" finished-at="2023-05-14T01:00:34Z" duration-ms="1006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login_logout -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:34Z" name="afterMethod" finished-at="2023-05-14T01:00:34Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- LearningTestNG.TestSauceDemo -->
+    </test> <!-- GRP-Smoke -->
+  </suite> <!-- LambdaSelenium by groups -->
+</testng-results>
