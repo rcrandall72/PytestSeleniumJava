@@ -1,0 +1,9 @@
+name: Suite
+configFailurePolicy: skip
+tests:
+  - name: Test
+  verbose: 2
+  includedGroups: [ Smoke ]
+  classes:
+    - LearningTestNG.TestSauceDemo
+

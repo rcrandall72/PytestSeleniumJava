@@ -1,45 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-14T01:00:28Z" name="LambdaSelenium by groups" finished-at="2023-05-14T01:00:34Z" duration-ms="5762">
+  <suite started-at="2023-05-15T18:49:28Z" name="Suite" finished-at="2023-05-15T18:49:56Z" duration-ms="28838">
     <groups>
       <group name="Regression">
-        <method signature="TestSauceDemo.test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_buy_item" class="LearningTestNG.TestSauceDemo"/>
-        <method signature="TestSauceDemo.test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_login_logout" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_buy_item" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_cannot_login_with_locked_user()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_cannot_login_with_locked_user" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_login_logout" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_social_media_links()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_social_media_links" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_sort_products()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_sort_products" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_user_signing_credential_errors()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_user_signing_credential_errors" class="LearningTestNG.TestSauceDemo"/>
       </group> <!-- Regression -->
       <group name="Smoke">
-        <method signature="TestSauceDemo.test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_buy_item" class="LearningTestNG.TestSauceDemo"/>
-        <method signature="TestSauceDemo.test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" name="test_login_logout" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_buy_item" class="LearningTestNG.TestSauceDemo"/>
+        <method signature="TestSauceDemo.test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" name="test_login_logout" class="LearningTestNG.TestSauceDemo"/>
       </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-05-14T01:00:28Z" name="GRP-Smoke" finished-at="2023-05-14T01:00:34Z" duration-ms="5762">
+    <test started-at="2023-05-15T18:49:28Z" name="Test" finished-at="2023-05-15T18:49:56Z" duration-ms="28838">
       <class name="LearningTestNG.TestSauceDemo">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:28Z" name="beforeMethod" finished-at="2023-05-14T01:00:30Z" duration-ms="2190" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:28Z" name="beforeMethod" finished-at="2023-05-15T18:49:29Z" duration-ms="1890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:30Z" name="test_buy_item" finished-at="2023-05-14T01:00:32Z" duration-ms="1191" status="PASS">
+        <test-method signature="test_buy_item()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:29Z" name="test_buy_item" finished-at="2023-05-15T18:49:31Z" duration-ms="1152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_buy_item -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:32Z" name="afterMethod" finished-at="2023-05-14T01:00:32Z" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:31Z" name="afterMethod" finished-at="2023-05-15T18:49:31Z" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:32Z" name="beforeMethod" finished-at="2023-05-14T01:00:33Z" duration-ms="1076" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:31Z" name="beforeMethod" finished-at="2023-05-15T18:49:32Z" duration-ms="1102" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:33Z" name="test_login_logout" finished-at="2023-05-14T01:00:34Z" duration-ms="1006" status="PASS">
+        <test-method signature="test_cannot_login_with_locked_user()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:32Z" name="test_cannot_login_with_locked_user" finished-at="2023-05-15T18:49:32Z" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_cannot_login_with_locked_user -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:32Z" name="afterMethod" finished-at="2023-05-15T18:49:32Z" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:32Z" name="beforeMethod" finished-at="2023-05-15T18:49:34Z" duration-ms="1201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_login_logout()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:34Z" name="test_login_logout" finished-at="2023-05-15T18:49:35Z" duration-ms="1038" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_login_logout -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@13f9ad9]" started-at="2023-05-14T01:00:34Z" name="afterMethod" finished-at="2023-05-14T01:00:34Z" duration-ms="122" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:35Z" name="afterMethod" finished-at="2023-05-15T18:49:35Z" duration-ms="123" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:35Z" name="beforeMethod" finished-at="2023-05-15T18:49:36Z" duration-ms="1211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_social_media_links()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:36Z" name="test_social_media_links" finished-at="2023-05-15T18:49:52Z" duration-ms="15708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_social_media_links -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:52Z" name="afterMethod" finished-at="2023-05-15T18:49:52Z" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:52Z" name="beforeMethod" finished-at="2023-05-15T18:49:53Z" duration-ms="1090" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_sort_products()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:53Z" name="test_sort_products" finished-at="2023-05-15T18:49:54Z" duration-ms="1344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_sort_products -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:54Z" name="afterMethod" finished-at="2023-05-15T18:49:55Z" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:55Z" name="beforeMethod" finished-at="2023-05-15T18:49:56Z" duration-ms="1106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="test_user_signing_credential_errors()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:56Z" name="test_user_signing_credential_errors" finished-at="2023-05-15T18:49:56Z" duration-ms="606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_signing_credential_errors -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:LearningTestNG.TestSauceDemo@45a37759]" started-at="2023-05-15T18:49:56Z" name="afterMethod" finished-at="2023-05-15T18:49:56Z" duration-ms="126" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- LearningTestNG.TestSauceDemo -->
-    </test> <!-- GRP-Smoke -->
-  </suite> <!-- LambdaSelenium by groups -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
