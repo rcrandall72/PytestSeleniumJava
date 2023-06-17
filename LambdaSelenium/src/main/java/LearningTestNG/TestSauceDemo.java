@@ -44,19 +44,19 @@ public class TestSauceDemo {
 		// Test Error message with no credentials
 		cf.pressButton(CommonStrings.LOGIN_BUTTON);
 		assert cf.checkForElement(CommonStrings.ERROR_MESSAGE);
-		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getAttribute("innerText").equals(CommonStrings.USERNAME_REQUIRED_MESSAGE);
+		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getText().equals(CommonStrings.USERNAME_REQUIRED_MESSAGE);
 
 		// Test Error message with only username
 		cf.sendKeys(CommonStrings.USERNAME_FIELD, cf.getRandomString());
 		cf.pressButton(CommonStrings.LOGIN_BUTTON);
 		assert cf.checkForElement(CommonStrings.ERROR_MESSAGE);
-		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getAttribute("innerText").equals(CommonStrings.PASSWORD_REQUIRED_MESSAGE);
+		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getText().equals(CommonStrings.PASSWORD_REQUIRED_MESSAGE);
 
 		// Test Error message with no credentials
 		cf.sendKeys(CommonStrings.PASSWORD_FIELD, cf.getRandomString());
 		cf.pressButton(CommonStrings.LOGIN_BUTTON);
 		assert cf.checkForElement(CommonStrings.ERROR_MESSAGE);
-		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getAttribute("innerText").equals(CommonStrings.USERNAME_PASSWORD_MISMATCH_MESSAGE);
+		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getText().equals(CommonStrings.USERNAME_PASSWORD_MISMATCH_MESSAGE);
 	}
 	
 	@Test(groups = {"Smoke", "Regression"})

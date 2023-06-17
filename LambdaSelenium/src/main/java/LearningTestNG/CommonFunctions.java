@@ -42,6 +42,8 @@ public class CommonFunctions {
     		WebDriverManager.firefoxdriver().setup();
     		driver = new FirefoxDriver();
     	}
+    	
+    	driver.manage().window().maximize();
         
         // Go to URL
         driver.get(url);
