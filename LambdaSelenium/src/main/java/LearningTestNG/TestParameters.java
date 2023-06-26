@@ -5,23 +5,23 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class ParameterTest {
+public class TestParameters {
 	CommonFunctions cf = new CommonFunctions();
 	
 	@BeforeMethod(groups = {"Smoke", "Regression"})
 	public void beforeMethod() {
-		cf.startTest(CommonStrings.SAUCE_DEMO);
+		cf.startTest(SauceDemo.URL);
 	}
 	
 	@Test(groups = {"Smoke", "Regression"})
 	@Parameters({"email", "password"})
 	public void test_login_logout(String email, String password) throws Exception {		
 		// Test Error message with no credentials
-		cf.sendKeys(CommonStrings.USERNAME_FIELD, email);
-		cf.sendKeys(CommonStrings.PASSWORD_FIELD, password);
-		cf.pressButton(CommonStrings.LOGIN_BUTTON);
-		assert cf.checkForElement(CommonStrings.ERROR_MESSAGE);
-		assert cf.assignElement(CommonStrings.ERROR_MESSAGE).getText().equals(CommonStrings.USERNAME_PASSWORD_MISMATCH_MESSAGE);
+		cf.sendKeys(SauceDemo.USERNAME_FIELD, email);
+		cf.sendKeys(SauceDemo.PASSWORD_FIELD, password);
+		cf.pressButton(SauceDemo.LOGIN_BUTTON);
+		assert cf.checkForElement(SauceDemo.ERROR_MESSAGE);
+		assert cf.assignElement(SauceDemo.ERROR_MESSAGE).getText().equals(SauceDemo.USERNAME_PASSWORD_MISMATCH_MESSAGE);
 	}
 	
 	@AfterMethod(groups = {"Smoke", "Regression"})

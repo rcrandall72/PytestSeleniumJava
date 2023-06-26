@@ -1,12 +1,14 @@
 package LearningTestNG;
 
-public class CommonStrings {
-
-	static String SAUCE_DEMO = "https://www.saucedemo.com/";
-
+final class CommonStrings {
 	static String CHROME = "chrome";
 	static String FIREFOX = "firefox";
-	static String SAFARI = "safari";
+	static String SAFARI = "safari";	
+}
+
+final class SauceDemo {
+
+	static String URL = "https://www.saucedemo.com/";
 
 	static String USERNAME_FIELD = "user-name";
 	static String PASSWORD_FIELD = "password";
@@ -72,4 +74,52 @@ public class CommonStrings {
 	static String FACEBOOK_URL = "https://www.facebook.com/saucelabs";
 	static String[] SOCIAL_LINKEDIN = { "li", "class", "social_linkedin" };
 	static String LINKEDIN_URL = "https://www.linkedin.com/company/sauce-labs/";
+}
+
+final class UkCoAutomation {
+	static String URL = "https://automationtesting.co.uk/";
+	static String[] TEST_STORE_BUTTON = {"a", "href", "http://teststore.automationtesting.co.uk/"};
+	
+	static String[] HOME_BUTTON = {"img", "src", "/img/logo.png"};
+	static String[] HUMMINGBIRD_TSHIRT = {"img", "alt", "Hummingbird printed t-shirt"};
+	static String[] HUMMINGBIRD_SWEATER = {"img", "alt", "Brown bear printed sweater"};
+	static String[] ADD_TO_CART_BUTTON = {"button", "data-button-action", "add-to-cart"};
+	static String[] CART_CONTENT_BUTTON = {"div", "class", "cart-content-btn"};
+	static String BUTTON_TAG = "button";
+	static String A_TAG = "a";
+	static String[] PROCEED_TO_CHECKOUT_BUTTON = {"a", "href", "//teststore.automationtesting.co.uk/cart?action=show"};
+	static String[] HAVE_PROMO_CODE_BUTTON = {"a", "href", "#promo-code"};
+	static String[] PROMO_CODE_INPUT = {"input", "name", "discount_name"};
+	static String[] REMOVE_BUTTON = {"a", "class", "remove-from-cart"};
+	static String[] ADD_BUTTON = {"form", "data-link-action", "add-voucher", "/button"};
+	static String[] TOTAL_LINE = {"div", "class", "cart-summary-line cart-total"};
+	static String[] PROCEED_TO_CHECKOUT_ORDER_BUTTON = {"a", "href", "http://teststore.automationtesting.co.uk/order"};
+	static String[] TITLE_RADIO = {"*", "id", "customer-form", "/section/div[1]/div[1]/label[1]/span"};
+	static String[] FIRST_NAME_FIELD = {"input", "name", "firstname"};
+	static String[] LAST_NAME_FIELD = {"input", "name", "lastname"};
+	static String[] EMAIL_FIELD = {"*", "id", "customer-form", "/section/div[4]/div[1]/input"};
+	static String[] ADDRESS_FIELD = {"input", "name", "address1"};
+	static String[] ADDRESS_2_FIELD = {"input", "name", "address2"};
+	static String[] CITY_FIELD = {"input", "name", "city"};
+	static String[] STATE_DROPDOWN = {"select", "name", "id_state"};
+	static String[] DROPDOWN_VALUE = {"option", "value", ""};
+	static String[] ZIP_FIELD = {"input", "name", "postcode"};
+	static String[] COUNTRY_DROPDOWN = {"select", "name", "id_country"};
+	static String[] PHONE_FIELD = {"input", "name", "phone"};
+	static String[] AGREE_TO_TERMS_AND_PRIVACY_CHECKBOX = {"*", "id", "customer-form", "/section/div[9]/div[1]/span/label/span"};
+	static String[] CONTINUE_STEP1_BUTTON = {"*", "id", "customer-form", "/footer/button"};
+	static String[] CONTINUE_STEP2_BUTTON = {"*", "id", "delivery-address", "/div/footer/button"};
+	static String[] CONTINUE_STEP3_BUTTON = {"*", "id", "js-delivery", "/button"};
+	static String PAYMENT_CONFIRMATION = "payment-confirmation";
+	static String DELIVERY_COMMENT_FIELD = "delivery_message";
+	static String[] PAY_BY_CHECK_RADIO = {"*", "id", "payment-option-1-container", "/label"};
+	static String[] AGREE_TO_TERMS_CHECKBOX = {"*", "id", "conditions-to-approve", "/ul/li/div"};
+	static String[] ORDER_CONFIRMATION_TITLE = {"h3", "class", "h1 card-title"};
+	static String ORDER_WITH_AN_OBLIGATION_TO_PAY = "ORDER WITH AN OBLIGATION TO PAY";
+	static String[] ORDER_CONFIRMATION_TEXT = {"h3", "class", "h1 card-title"};
+	static String ORDER_CONFIRMATION = "YOUR ORDER IS CONFIRMED";
+	static String QUANTITY_FIELD = "quantity_wanted";
+	static String[] CONTINUE_SHOPPING = {"*", "id", "blockcart-modal", "/div/div/div[2]/div/div[2]/div/div/button"};
+	
+	//*[@id="main"]/div/div[2]/div[1]/div[1]/div[2]/div[2]
 }

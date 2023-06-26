@@ -4,9 +4,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 import java.util.UUID;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.ElementClickInterceptedException;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
@@ -14,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.Select;
 
 
 public class CommonFunctions {
@@ -54,9 +58,16 @@ public class CommonFunctions {
     }
     
     public void pressButton(Object elementName, int iteration) throws Exception {
+    	System.out.print("pressButton ");
     	// Find and click element
     	WebElement element = assignElement(elementName, iteration);
-    	element.click();
+    	try {
+    		element.click();
+    	}
+    	catch (ElementClickInterceptedException e) {
+    		JavascriptExecutor js = (JavascriptExecutor) driver;
+    		js.executeScript("arguments[0].click();", element);
+    	}
     }
     
     public void pressButton(Object elementName) throws Exception {
@@ -65,8 +76,10 @@ public class CommonFunctions {
     }
     
     public String sendKeys(Object elementName, String text, int iteration) throws Exception {
+    	System.out.print("sendKeys ");
     	// Find and send keys to element
     	WebElement element = assignElement(elementName, iteration);
+    	element.clear();
     	element.sendKeys(text);
     	
     	// Return text sent
@@ -77,6 +90,11 @@ public class CommonFunctions {
     	// Assume iteration 0 if none provided
     	return sendKeys(elementName, text, 0);
     }
+    
+    public String sendKeys(Object elementName, int text) throws Exception {
+    	// Convert int to String
+    	return sendKeys(elementName, String.valueOf(text), 0);
+    }
 
     public WebElement assignElement(Object elementName, int iteration) throws Exception {
     	String parsedName;
@@ -85,6 +103,7 @@ public class CommonFunctions {
     	// Auto-determine element type
     	if (elementName instanceof String) {
     		elementType = By.id((String) elementName);
+    		System.out.println("Element --> " + (String) elementName);
     	}
     	else {
             String[] elementXpath = (String[]) elementName;
@@ -96,6 +115,7 @@ public class CommonFunctions {
     			parsedName = "//" + elementXpath[0] + "[@" + elementXpath[1] + "='" + elementXpath[2] + "']";
     		}
     		elementType = By.xpath(parsedName); 			
+    		System.out.println("Element --> " + parsedName);
     	}
     	
     	// Find and return element of given iteration
@@ -187,15 +207,37 @@ public class CommonFunctions {
     	}
     }
     
+    public void selectFromDropdown(Object elementName, String value) throws Exception {
+    	WebElement element = assignElement(elementName);
+    	
+    	Select select = new Select(element);
+    	select.selectByVisibleText(value);
+    }
+    
+    public void selectFromDropdown(Object elementName) throws Exception {
+    	WebElement element = assignElement(elementName);
+    	
+    	Select select = new Select(element);
+    	List<WebElement> options = select.getOptions();
+    	Random rand = new Random();
+    	int randomIndex = rand.nextInt(options.size());
+    	select.selectByIndex(randomIndex);
+    }
+    
     public String getRandomString() {
     	return UUID.randomUUID().toString().replace("-", "");
     }
     
-    public void signInAsUser(String user) throws Exception {
-		sendKeys(CommonStrings.USERNAME_FIELD, user);
-		sendKeys(CommonStrings.PASSWORD_FIELD, CommonStrings.PASSWORD);
-		pressButton(CommonStrings.LOGIN_BUTTON);
+    public String getRandomLetters(int length) {
+        Random random = new Random();
+        StringBuilder stringBuilder = new StringBuilder(length);
+
+        for (int i = 0; i < length; i++) {
+            char randomChar = (char) (random.nextInt(26) + 'a');
+            stringBuilder.append(randomChar);
+        }
+
+        return stringBuilder.toString();
     }
-    
-    
+
 }
