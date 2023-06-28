@@ -221,6 +221,7 @@ public class CommonFunctions {
     	List<WebElement> options = select.getOptions();
     	Random rand = new Random();
     	int randomIndex = rand.nextInt(options.size());
+    	if (randomIndex == 0) randomIndex = 1;
     	select.selectByIndex(randomIndex);
     }
     
